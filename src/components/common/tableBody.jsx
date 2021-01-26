@@ -21,7 +21,8 @@ class TableBody extends Component {
                     {columns.map(column => 
                         <td key={this.createKey(item, column)}>
                             {this.renderCell(item, column)}
-                        </td>)}
+                        </td>
+                    )}
                 </tr>
             )}
         </tbody> );
