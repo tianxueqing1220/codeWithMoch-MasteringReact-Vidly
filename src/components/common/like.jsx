@@ -1,14 +1,15 @@
 import React from "react";
 
 const Like = props => {
+  let classes = "fa fa-heart";
+  if (!props.liked) classes += "-o";
   return (
     <i
       onClick={props.onClick}
       style={{ cursor: "pointer" }}
+      className={classes}
       aria-hidden="true"
-    >
-      {!props.liked ? '\u2661' : '\u2665'}
-    </i>
+    />
   );
 };
 
